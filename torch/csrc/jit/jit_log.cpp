@@ -25,7 +25,7 @@ std::string jit_log_prefix(JitLoggingLevels level, const std::string& in_str) {
   std::string line;
 
   while (std::getline(in_ss, line, '\n')) {
-    out_ss << level << line << std::endl;
+    out_ss << level << " " << line << std::endl;
   }
 
   return out_ss.str();
